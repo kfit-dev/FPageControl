@@ -20,11 +20,6 @@
     return self;
 }
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    [self customInit];
-}
-
 -(void)customInit {
     self.dotSize = 5;
     self.dotSpacing = 3;
