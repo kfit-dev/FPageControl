@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A02543CE96DF400899B277D2D55158F /* FPageControl.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = FPageControl.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0A02543CE96DF400899B277D2D55158F /* FPageControl.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = FPageControl.podspec; sourceTree = "<group>"; };
 		19B54D1ED3BDFA8F0AF35846A692F10D /* Pods-FPageControl_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FPageControl_Example-umbrella.h"; sourceTree = "<group>"; };
 		1A296049CF6832FEE24F1B076D3EB70D /* Pods-FPageControl_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FPageControl_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1C31636521E48C4A001736E0 /* FPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPageControl.h; path = FPageControl/FPageControl.h; sourceTree = "<group>"; };
