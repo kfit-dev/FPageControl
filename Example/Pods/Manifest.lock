@@ -1,0 +1,16 @@
+PODS:
+  - FPageControl (0.1.0)
+
+DEPENDENCIES:
+  - FPageControl (from `../`)
+
+EXTERNAL SOURCES:
+  FPageControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FPageControl: aef2e1bb19eb105432d62a6e4db6bb2dac8429b3
+
+PODFILE CHECKSUM: 39a0453455130722953e0291cf3df59d68fa4cc1
+
+COCOAPODS: 1.5.3
