@@ -3,7 +3,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/FPageControl.svg?style=flat)](https://cocoapods.org/pods/FPageControl)
 [![License](https://img.shields.io/cocoapods/l/FPageControl.svg?style=flat)](https://cocoapods.org/pods/FPageControl)
-[![Platform](https://img.shields.io/cocoapods/p/FPageControl?style=flat)](https://cocoapods.org/pods/FPageControl)
+[![Platform](https://img.shields.io/cocoapods/p/FPageControl.svg?style=flat)](https://cocoapods.org/pods/FPageControl)
 
 <img src="https://github.com/Berdikhan/FPageControl/blob/master/screenshot_simulator.gif"/>&nbsp;
 <img src="https://github.com/Berdikhan/FPageControl/blob/master/screenshot_xcode.gif"/>
