@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'FPageControl'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'Custom Page Control for Fave'
 
   s.description      = <<-DESC
