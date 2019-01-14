@@ -43,7 +43,7 @@
 -(void)layoutSubviews {
     [super layoutSubviews];
     NSInteger i = 0;
-    CGFloat width = self.dotSize * (CGFloat)(self.subviews.count + 2) + self.dotSpacing * (CGFloat)(self.subviews.count - 1);
+    CGFloat width = self.dotSize * (CGFloat)(self.subviews.count + 3) + self.dotSpacing * (CGFloat)(self.subviews.count - 1);
     CGFloat x = self.frame.size.width / 2 - (width / 2);
     CGFloat y = self.frame.size.height / 2 - self.dotSize / 2;
     for (UIView *view in self.subviews) {
@@ -51,8 +51,8 @@
         frame.origin.x = x;
         frame.origin.y = y;
         if (self.currentPage == i) {
-            frame.size = CGSizeMake(self.dotSize * 3, self.dotSize);
-            x += self.dotSize * 3 + self.dotSpacing;
+            frame.size = CGSizeMake(self.dotSize * 4, self.dotSize);
+            x += self.dotSize * 4 + self.dotSpacing;
         } else {
             frame.size = CGSizeMake(self.dotSize, self.dotSize);
             x += self.dotSize + self.dotSpacing;
