@@ -28,7 +28,9 @@
 
 -(void)setCurrentPage:(NSInteger)currentPage {
     [super setCurrentPage:currentPage];
-    [self layoutSubviews];
+    [UIView animateWithDuration:0.4 animations:^{
+        [self layoutSubviews];
+    }];
 }
 
 -(void)setNumberOfPages:(NSInteger)numberOfPages {

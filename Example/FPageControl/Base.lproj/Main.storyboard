@@ -21,9 +21,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="kWf-5O-NGc" customClass="FPageControl">
-                                <rect key="frame" x="130" y="137" width="133" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="kWf-5O-NGc" customClass="FPageControl">
+                                <rect key="frame" x="103" y="135" width="169" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="KoG-dV-2l7"/>
+                                    <constraint firstAttribute="width" constant="169" id="Nk1-cS-bUH"/>
+                                </constraints>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" red="0.87058823529999996" green="0.12549019610000001" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
@@ -35,9 +38,44 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2B-u5-1Im">
+                                <rect key="frame" x="65" y="138.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dnB-Kl-Ek7"/>
+                                    <constraint firstAttribute="width" constant="30" id="oBQ-W2-HBb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="minus:" destination="whP-gf-Uak" eventType="touchUpInside" id="Bj5-y5-dSG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUh-m2-Shf">
+                                <rect key="frame" x="280" y="138.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3ui-Fb-cCI"/>
+                                    <constraint firstAttribute="width" constant="30" id="eeP-bj-l78"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="plus:" destination="whP-gf-Uak" eventType="touchUpInside" id="01H-sl-y9S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="X2B-u5-1Im" firstAttribute="centerY" secondItem="kWf-5O-NGc" secondAttribute="centerY" id="9yF-ux-SCG"/>
+                            <constraint firstItem="kWf-5O-NGc" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="AT6-16-cC0"/>
+                            <constraint firstItem="DUh-m2-Shf" firstAttribute="leading" secondItem="kWf-5O-NGc" secondAttribute="trailing" constant="8" id="EL9-PY-EbS"/>
+                            <constraint firstItem="DUh-m2-Shf" firstAttribute="centerY" secondItem="kWf-5O-NGc" secondAttribute="centerY" id="GGP-XJ-j7P"/>
+                            <constraint firstItem="kWf-5O-NGc" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="115" id="OBh-F4-0Iu"/>
+                            <constraint firstItem="kWf-5O-NGc" firstAttribute="leading" secondItem="X2B-u5-1Im" secondAttribute="trailing" constant="8" id="ico-vh-LGN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="kWf-5O-NGc" id="RHO-jC-q2j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
