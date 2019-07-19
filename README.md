@@ -5,8 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/FPageControl.svg?style=flat)](https://cocoapods.org/pods/FPageControl)
 [![Platform](https://img.shields.io/cocoapods/p/FPageControl.svg?style=flat)](https://cocoapods.org/pods/FPageControl)
 
-<img src="https://github.com/Berdikhan/FPageControl/blob/master/screenshot_simulator.gif"/>&nbsp;
-<img src="https://github.com/Berdikhan/FPageControl/blob/master/screenshot_xcode.gif"/>
+<img src="https://github.com/kfit-dev/FPageControl/blob/master/screenshot_simulator.gif"/>&nbsp;
+<img src="https://github.com/kfit-dev/FPageControl/blob/master/screenshot_xcode.gif"/>
 
 ## Example
 
@@ -29,7 +29,7 @@ pod 'FPageControl'
 Add the following entry to your `Cartfile`:
 
 ```
-github "Berdikhan/FPageControl"
+github "kfit-dev/FPageControl"
 ```
 
 Then run `carthage update`.
@@ -38,7 +38,7 @@ If this is your first time using Carthage in the project, you'll need to go thro
 
 ## Author
 
-Berdikhan, berdikhan@gmail.com
+Fave, dev@kfit.com
 
 ## License
 
