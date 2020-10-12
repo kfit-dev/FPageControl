@@ -44,11 +44,19 @@
 
 -(void)layoutSubviews {
     [super layoutSubviews];
+    NSArray<UIView*> *subViews = self.subviews;
+    CGFloat mainWidth = self.frame.size.width;
+    CGFloat mainHeight = self.frame.size.height;
+    if (@available(iOS 14.0, *)) {
+        subViews = self.subviews.firstObject.subviews.firstObject.subviews;
+        mainWidth = self.subviews.firstObject.subviews.firstObject.frame.size.width;
+        mainHeight = self.subviews.firstObject.subviews.firstObject.frame.size.height;
+    }
     NSInteger i = 0;
-    CGFloat width = self.dotSize * (CGFloat)(self.subviews.count + 3) + self.dotSpacing * (CGFloat)(self.subviews.count - 1);
-    CGFloat x = self.frame.size.width / 2 - (width / 2);
-    CGFloat y = self.frame.size.height / 2 - self.dotSize / 2;
-    for (UIView *view in self.subviews) {
+    CGFloat width = self.dotSize * (CGFloat)(subViews.count + 3) + self.dotSpacing * (CGFloat)(subViews.count - 1);
+    CGFloat x = mainWidth / 2 - (width / 2);
+    CGFloat y = mainHeight / 2 - self.dotSize / 2;
+    for (UIView *view in subViews) {
         CGRect frame = view.frame;
         frame.origin.x = x;
         frame.origin.y = y;
@@ -59,10 +67,19 @@
             frame.size = CGSizeMake(self.dotSize, self.dotSize);
             x += self.dotSize + self.dotSpacing;
         }
+        if (@available(iOS 14.0, *)) {
+            ((UIImageView*)view).image = nil;
+            if (self.currentPage == i) {
+                view.backgroundColor = self.currentPageIndicatorTintColor;
+            } else {
+                view.backgroundColor = self.pageIndicatorTintColor;
+            }
+        }
         view.layer.cornerRadius = self.dotSize / 2;
         view.frame = frame;
         i += 1;
     }
+    
 }
 
 @end
