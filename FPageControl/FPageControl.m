@@ -68,7 +68,9 @@
             x += self.dotSize + self.dotSpacing;
         }
         if (@available(iOS 14.0, *)) {
-            ((UIImageView*)view).image = nil;
+            if ([view isKindOfClass: [UIImageView class]]) {
+                ((UIImageView*)view).image = nil;
+            }
             if (self.currentPage == i) {
                 view.backgroundColor = self.currentPageIndicatorTintColor;
             } else {
